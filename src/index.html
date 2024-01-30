@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Windows Form</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="borda largura center ">
+    <form class="formulario espacamento center" action="">
+      <label for="">Nome</label>
+      <input type="text" id="aluno" autofocus>
+      <label for="">Curso</label>
+      <input type="text" id="curso">
+      <label for="">Idade</label>
+      <input type="text" id="idade">
+    </form>
+    <button class="espacamento" onclick="addAluno()">ADD</button>
+    <button class="espacamento" onclick="undo()">UNDO</button>
+  </div>
+  <div class="borda largura">
+    <div class="espacamento center cabecalhoLista ">
+      Lista Alunos
+      <div id="lista">
+
+        <table id="tabelaDados">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Curso</th>
+              <th>Idade</th>
+          </thead>
+          <tbody class="tbody">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="funcao.js"></script>
+
+</html>
